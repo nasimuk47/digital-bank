@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>bank inside</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="text-5xl text-center mt-6">
+                Taka R
+                <span class="font-bold text-violet-600"> Shohor....</span>
+                <main>
+                    <section class="mt-12">
+                        <div
+                            class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+                            <div class="bg-green-400 p-8 rounded-xl">
+                                <h4 class="text-2xl">Deposit</h4>
+                                <h2 class="text-5xl">
+                                    $<span id="depusit-total">00</span>
+                                </h2>
+                            </div>
+                            <div class="bg-blue-500 p-8 rounded-xl">
+                                <h4 class="text-2xl">Withdraw</h4>
+                                <h2 class="text-5xl">
+                                    $<span id="widthdraw-total">00</span>
+                                </h2>
+                            </div>
+                            <div class="bg-red-400 p-8 rounded-xl">
+                                <h4 class="text-2xl">Balance</h4>
+                                <h2 class="text-5xl">
+                                    $<span id="balance-total">15250</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- withdrw----------------------------->
+
+                    <section class="mt-12">
+                        <div
+                            class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white">
+                            <div class="bg-red-400 p-8 rounded-xl">
+                                <h4 class="text-3xl mb-4 flex justify-start">
+                                    Please Deposit
+                                </h4>
+                                <input
+                                    id="depusit-field"
+                                    class="block w-9/12 px-3 mb-2 text-black h-12 rounded-lg"
+                                    type="text"
+                                    placeholder="$$" />
+                                <button
+                                    id="btn-deposit"
+                                    class="bg-blue-600 hover:bg-pink-600 px-2 py-1 rounded-lg font-small text-2xl flex justify-end">
+                                    Deposit
+                                </button>
+                            </div>
+                            <div class="bg-purple-500 p-8 rounded-xl">
+                                <h4 class="text-3xl mb-4 flex justify-start">
+                                    Please withdraw
+                                </h4>
+                                <input
+                                    id="withdraw-field"
+                                    class="block w-9/12 px-3 mb-2 text-black h-12 rounded-lg"
+                                    type="text"
+                                    placeholder="$$" />
+                                <button
+                                    id="btn-widthdraw"
+                                    class="bg-yellow-500 hover:bg-green-400 px-2 py-1 rounded-lg font-small text-2xl flex justify-end">
+                                    Withdraw
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </h1>
+        </header>
+        <script src="js/bank.js"></script>
+        <script src="js/withdraw.js"></script>
+    </body>
+</html>
