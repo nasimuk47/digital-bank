@@ -13,7 +13,7 @@ const items = [
     },
     {
         title: "Pay",
-        desc: "Complete your booking securely using cards, mobile banking, or other options.",
+        desc: "Complete your booking securely using card, mobile banking, or other options.",
         icon: CreditCard,
     },
 ];
